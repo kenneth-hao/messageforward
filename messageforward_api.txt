@@ -1,0 +1,23 @@
+
+URL:
+	FORMAT >> http://[服务器地址]:9090/plugins/messageforward
+	EXAMPLE >> http://wechat.cadillac-1.com:9090/plugins/messageforward
+
+POST - PARAMS:
+	sender -> '发送消息的用户名'
+	receiver -> '消息接受人的用户名'
+	message -> '消息内容'
+
+	注意: 只支持 POST 提交
+
+RETURN:
+	{
+		"result": "返回结果是否成功.  boolean",
+		"msg": "消息提示"
+	}
+
+	EXAMPLE:
+		{
+			"result": false,
+			"msg": "服务器~~duang~~了"
+		}
